@@ -21,10 +21,9 @@ To include special characters such as asterisks (\*), underscores (\_), or backt
 
 Example:
 
-markdown
-
-To display a literal asterisk (\*), use this: \`\*\` or `\*`
-
+```markdown
+To display a literal asterisk (*), use this: `*` or `\*`
+```
 
 ### Emphasis
 
