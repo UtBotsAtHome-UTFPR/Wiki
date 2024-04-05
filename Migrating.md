@@ -37,7 +37,7 @@ p3dx_description
 )
 ```
 
-will be converted to 
+will be converted to
 
 ```xml
 find_package(ament_cmake REQUIRED)
@@ -51,18 +51,18 @@ find_package(p3dx_description REQUIRED)
 
 As you can see, catkin package was substituted to ament_cmake, this is a necessary step.
 
-The `catkin_package()` call must be moved to the end of the file and replace by `ament_package()`. 
+The `catkin_package()` call must be moved to the end of the file and replace by `ament_package()`.
 
 Other arguments covered by functions have changed names and MUST be called before `ament_packages`. `CATKIN_DEPENDS` -> `ament_export_dependencies`, `INCLUDE_DIRS` -> `ament_export_include_directories()`. (THIS DOES NOT INCLUDE THE FUNCTION `INCLUDE_DIRECTORIES`). Additional information on such functions can be found in IF YOU SEE THIS UPDATE IT OR TELL DAVID SEGALLE TO UPDATE IT, ROS DOC WEBSITE IS CURRENTLY NOT ON AIR.LINKS FOR FUNCTIONS FOR ROS 1 AND ROS 2 MUST BE ADDED
 
 The call of `add_executable()` should be moved to after `find_package()` or any of the `CATKIN_DEPENDS` and `INCLUDE_DIRS` like functions .
-
 
 `target_link_libraries()` should be moved to immediately after `add_executables()`. it's name changed to `ament_target_dependencies()`. This new function automatically handles include directories defined in `INCLUDE_DIRS` as well as linking libraries defined in `_LIBRARIES`. However, other targets must be manually set.
 
 ```xml
 target_link_libraries(mover ${catkin_LIBRARIES})
 ```
+
 Now becomes
 
 ```xml
@@ -98,6 +98,7 @@ install(DIRECTORY include/
 ament_export_include_directories(include)
 ament_export_dependencies(std_msgs)
 ```
+
 And lastly, as mentioned previously, The last thing in the file should be a call to `ament_package`
 
 ### The Source Code
@@ -109,5 +110,3 @@ included messages, services and actions now have /msg/, /srv/ and /action respec
 Variable declaration of message types also have ::msg:: added to them.
 
 ### Launch Files
-
-
