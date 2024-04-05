@@ -10,7 +10,7 @@ A [official guide](https://docs.ros.org/en/humble/How-To-Guides/Migrating-from-R
 
 The beginning is dedicated to changing the build type to use ament_cmake in place of the old catkin_system. This is relatively simple and brought no problems.
 
-Finding updated package names for ros 2 was annoying due to how scattered this information can be, however, after some trying all issues appeared to be solved. 
+Finding updated package names for ros 2 was annoying due to how scattered this information can be, however, after some trying all issues appeared to be solved.
 
 The rest of the section is referent to changes in function calls and arguments. Changes in the order of function calls can be confusing and the different arguments to be used can cause trouble to someone who _like me_ had very limited knowledge on the workings of this project organization tool.
 
@@ -48,7 +48,7 @@ After some digging I figured that the issues arose from a couple of files where 
 
 [Ros_bridge](https://github.com/ros2/ros1_bridge) is a system which allows multiple ros versions to communicate with each other. Getting system requirements issues out of the way: Ros2 versions released for ubuntu 22.04 are not supported by ros_bridge, I was unable to install ros_rolling in ubuntu 20.04 (the issue is likely a small section of a install script and the needed changes are shown in the guide to [build ros humble from source](https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html) on ubuntu 20.04, however, due to time constraints we did not try anything).
 
-As for possible setups: 
+As for possible setups:
 
 Using ros galactic which has already reached EOL together with ros noetic on ubuntu 20.04 was the most successful solution of the entire project. We could use teleop on ros2 galactic as well as reading all the robots telemetry data while the robot ran on ros noetic. The only problem was that I was unable to launch robots from ros2 into the gazebo simulation.
 
