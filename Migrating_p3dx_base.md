@@ -60,4 +60,4 @@ Other attempts all fell into major issues on compatibility for ros_bridge or ina
 
 If i had the knowledge I have now I would just grab the urdf model and check how to load urdf models into gazebo using ros2. There are plenty of guides and tutorials which appear quite simple and make use of python launch files (I don't know why I'm mentioning the python launch file thing, I just found it interesting).
 
-**If you're thinking of converting a random package it shouldn't be the end of the world. If you **
+_**If you're thinking of converting a random package it shouldn't be the end of the world provided that there are no weird dependencies on packages developed by other people. Otherwise, just write everything from scratch.**_
