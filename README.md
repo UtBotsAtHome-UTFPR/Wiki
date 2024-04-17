@@ -43,6 +43,7 @@ __Bold__
 - **Unordered List**: Use `-`, `*`, or `+` followed by a space for each item.
 
 Example:
+
 ```markdown
 - Item 1
 - Item 2
@@ -53,6 +54,7 @@ Example:
 - **Ordered List**: Use numbers followed by a period and a space.
 
 Example:
+
 ```markdown
 1. Item 1
 2. Item 2
@@ -64,6 +66,7 @@ Example:
 Use `[text](URL)` to create a hyperlink.
 
 Example:
+
 ```markdown
 [Google](https://www.google.com)
 ```
@@ -73,6 +76,7 @@ Example:
 Use `![alt text](image URL)` to embed images.
 
 Example:
+
 ```markdown
 ![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1280px-Markdown-mark.svg.png)
 ```
@@ -82,6 +86,7 @@ Example:
 Use backticks (\`) to highlight inline code, and triple backticks for code blocks.
 
 Example:
+
 ```markdown
 `inline code`
 
@@ -95,6 +100,7 @@ print("Hello, world!")
 Use `>` to create blockquotes.
 
 Example:
+
 ```markdown
 > This is a blockquote.
 ```
@@ -104,6 +110,7 @@ Example:
 Use three or more hyphens (`-`), asterisks (`*`), or underscores (`_`) on a separate line to create a horizontal rule.
 
 Example:
+
 ```markdown
 ---
 ```
