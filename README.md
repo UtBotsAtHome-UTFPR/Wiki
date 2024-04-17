@@ -9,6 +9,7 @@ As written by chatgpt because I'm lazy
 Use the `#` symbol followed by a space for headers. The number of `#` symbols indicates the level of the header. The more `#` the smaller the text.
 
 Example:
+
 ```markdown
 # Heading 1
 ## Heading 2
@@ -30,6 +31,7 @@ To display a literal asterisk (*), use this: `*` or `\*`
 Use asterisks (`*`) or underscores (`_`) to emphasize text.
 
 Example:
+
 ```markdown
 *Italic*
 _Italic_
