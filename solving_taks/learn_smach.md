@@ -16,6 +16,10 @@ The Advanced Smach section is just a mess in general.
 
 If the official documentation has left you lost in some aspect I recommend watching [this video](https://www.youtube.com/watch?v=jrV5jRs1SJc) from 23:20 forward. If even this seems incomplete look at the sidenote to see if someone has had your issue and added a simple explanation to it.
 
+## In practice
+
+Now, it's time to understand how all this information can be put into use on our system. Two videos are available, one on [creating services](https://www.youtube.com/watch?v=SxBXCYHSKGk) and one on [using services within a state machine context]()
+
 ## Sidenote
 
 By default, when a service is called by a server, the server will wait until the service callback function is completed to continue, a topic will simply publish and wait. Therefore synchronous tasks are ideally made by using services and asynchronous tasks such as turning on the camera can be done by topics. Asynchronous tasks can technically be performed by changing params, however, that is bad for a multitude of reasons this guide won't get into.
