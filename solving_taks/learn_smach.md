@@ -18,7 +18,7 @@ If the official documentation has left you lost in some aspect I recommend watch
 
 ## In practice
 
-Now, it's time to understand how all this information can be put into use on our system. Two videos are available, one on [creating services](https://www.youtube.com/watch?v=SxBXCYHSKGk) and one on [using services within a state machine context]()
+Now, it's time to understand how all this information can be put into use on our system. Two videos are available, one on [creating services](https://www.youtube.com/watch?v=SxBXCYHSKGk) and one on [using services within a state machine context](https://youtu.be/Vh2wOgXY-kw)
 
 ## Sidenote
 
