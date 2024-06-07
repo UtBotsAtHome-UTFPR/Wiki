@@ -1,6 +1,8 @@
 # Understanding Behavior Trees and how to effectively use them
 
-For 2025 (and onwards) our task solving system is going to be based around behavior tree, in order to implement them one needs to be aware of how they work
+For 2025 (and onwards) our task solving system is going to be based around behavior tree, in order to implement them one needs to be aware of how they work.
+
+This guide is not self complete, one must first understand the nuances of using actions which can be achieved by following the ROS action guide.
 
 ## Starter guide
 
