@@ -7,13 +7,13 @@ This guide is not self complete, one must first understand the nuances of using 
 ## Starter guide
 
 [this small article](https://medium.com/@nullbyte.in/behavior-trees-for-ros2-part-1-unlocking-advanced-robotic-decision-making-and-control-7856582fb812
-) is a pretty good starting guide on how to setup a tree and how they work as far as their coding go. Actions are not defined here so this guide needs to be updated to give information on how to do a leaf node on the tree. If this has been enough for you feel free to go on your merry way.
+) is a pretty good starting guide on how to setup a tree and how they work as far as their coding go. This guide is not for the library we're using so things will look slightly different.
 
 ## Additional information
 
 ### Understanding the theory and abstraction system
 
-[There is a book](https://arxiv.org/abs/1709.00084) which is essentially what was used as a guide for the article (even the images used in the article come from here). Obviously I don't expect you to read it all, however, I did, so here's a guide on what is useful
+[There is a book](https://arxiv.org/abs/1709.00084) which is essentially what was used as a guide for the article (even the images used in the article come from here). Obviously I don't expect you to read it all, however, I did, so here's a guide on what is useful.
 
 - **Chapter 1.3 to 1.5**: They present a guide on how to perform abstraction from a behavior tree to code and vice-versa, followed by examples on how to build a tree to perform a task. After that the chapter contains a few less fleshed out examples.
 
@@ -23,9 +23,15 @@ This guide is not self complete, one must first understand the nuances of using 
 
 - **Chapter 3**: Design priciples, mainly ideas to follow for good designing. Most of them are obvious, but try to read at least 3.1, 3.2 and 3.4
 
-### Understanding the library behavior_tree
+### Understanding the library behaviortree_cpp_v3
 
-[Here's the official guide](https://github.com/miccol/ROS-Behavior-Tree/blob/master/BTUserManual.pdf). Just have a look at it, most of what is mentioned here was available inside the starter guide.
+As far as I'm aware there is no official documentation outside the source code, however, this library is the only one that is actively developed and doesn't have glaring issues opened like 2 years ago.
+
+[Here's the code](https://github.com/BehaviorTree/behaviortree_cpp_v3-release). To make sense of it go to upstream repositories and have a look at the code. Most of the useful implementation information is present in `include/behaviortree_cpp`, especifically the .h not inside folders. For example, `action_node.h` contains declarations for all possible sync and async use cases presented and their use cases.
+
+My suggestion: services and quick synchronous action (aka waiting for the response instead of returning running) should use `SimpleActionNode`. Long running actions which would stop the tree for too long and lose reactivity should use `StatefulActionNode`. Nodes which communicate to a system external to ROS should use `CoroActionNode` (or Stateful in case the additions to Coro are not necessary).
+
+I still have to create a video creating those nodes on a real enviroment.
 
 ### Future considerations and developments
 
