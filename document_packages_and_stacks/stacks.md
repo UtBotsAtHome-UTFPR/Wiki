@@ -29,11 +29,11 @@ git clone https://github.com/UtBotsAtHome-UTFPR/utbots_dependencies.git
 ```
 ### Dependencies
 
-**You can create a bash file or another method for automatically installing each packages' dependencies and explain its usage.**
+**You can create a bash file or another method for automatically installing each package dependencies and explain its usage.**
 
 **If not, you should add the following:**
 
-See the dependencies installation procedure for each package accessing its README.md file.
+See the dependencies installation procedure for each package accessing its README.md file or below, in [Packages Description].
 
 ### Building
 
@@ -52,7 +52,7 @@ See the usage explanation accessing each package in the repository (or the overv
 
 **In this case, adding functionality diagrams might be a good alternative. Otherwise, you can write briefly the usage for the stack's packages**
 
-## Packages overview
+## Packages Description
 
 **Adding an overview for a package is only encouraged when the package is not original and you cannot edit its README.md file according to the `packaged.md` guide. In this case, you can document it in this section. For instance:**
 
