@@ -33,7 +33,7 @@ git clone https://github.com/UtBotsAtHome-UTFPR/utbots_dependencies.git
 
 **If not, you should add the following:**
 
-See the dependencies installation procedure for each package accessing its README.md file or below, in [Packages Description].
+See the dependencies installation procedure for each package accessing its README.md file or below, in [Packages Description](#packages-description).
 
 ### Building
 
