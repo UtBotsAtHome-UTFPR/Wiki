@@ -48,7 +48,7 @@ catkin_make -DCMAKE_BUILD_TYPE=Release
 
 **If the usage is complex and the stack contains several packages, you might want to add the following:**
 
-See the usage explanation accessing each package in the repository (or the overview below)
+See the usage explanation accessing each package in the repository or below, in [Packages Description](#packages-description).
 
 **In this case, adding functionality diagrams might be a good alternative. Otherwise, you can write briefly the usage for the stack's packages**
 
