@@ -30,13 +30,15 @@ cd ..
 catkin_make
 ```
 
-**You should provide the full description of the installation of the dependencies. For instance, with Python, you may specify the Python version and write the following for installing requirements:**
+**You should provide the full description of the installation of the dependencies. For instance, with Python, you may specify the Python version and write the following for installing requirements (with Python we will always use virtualenvs and specify the path in the .py node's shebang):**
 
-The code runs on Python 3.8.
+The code runs on Python 3 and you must use a virtualenv (Install with `pip install virtualenv`) with the path `/usr/bin/venv_<package_name>/bin/python` as the node expects its existence to run. Install Python requirements:
 
 ```bash
+cd /usr/bin
+sudo python3 -m virtualenv venv_<package_name> --python=$(which python3)
 roscd <package_name>
-pip install -r requirements.txt
+/usr/bin/venv_<package_name>/bin/python -m pip install -r requirements.txt
 ```
 
 **OBS:** You may write relevant observations
