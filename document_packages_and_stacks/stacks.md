@@ -44,6 +44,17 @@ cd ~/catkin_ws
 catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
 
+### Updating
+
+**Assume users will know how to do basic pull, commit and push commands. If the stack contains packages added as submodules, updating might not be trivial, so you should add this subsection if the stack contains submodules, changing <package_1>, <package_2> with the submodule packages' names.**
+
+To push changes to the submodule packages (<package_1>, <package_2>) you should go to their repository path and perform a simple add, commit and push. After, you have to push the changes to the stack, going back to the stack repository path and doing the following command:
+
+```bash
+git submodule update --remote --merge
+```
+And then, perform a simple add, commit and push in the stack repository.
+
 ## Running
 
 **If the usage is complex and the stack contains several packages, you might want to add the following:**
